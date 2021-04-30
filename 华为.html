@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>华为官网</title>
+		<style>
+			*{
+				margin: 0px;
+				padding:0px ;
+			}
+			.header{
+				height: 100px;
+				width: 100%;
+				background-color:#f7f7f7 ;
+			}
+			.logo{
+				width: 150px;
+				height:80px ;
+				margin-left:30px;
+				margin-top: 7px;
+				float: left;
+			}
+			.nav{
+				float: left;
+				list-style-type: none;
+			}
+			.nav li{
+				float: left;
+				height:25px;
+				line-height: 25px;
+				margin-left:50px ;
+				margin-top:35px ;
+			}
+		.nav li a{
+			text-decoration:none ;
+			color: black;
+			font-size:25px;
+		}
+		.nav li a:hover:after{
+			content: "";
+			display: block;
+			width:auto ;
+			height:5px ;
+			background-color: black;
+		}
+		.header>a{
+			float:left ;
+			height:50px ;
+			width:150px ;
+			border-radius:25px ;
+			border:1px solid #cccccc;
+			text-decoration: none;
+			color: black;
+			font-size:25px ;
+			line-height:50px ;
+			text-align:center ;
+			margin:23px ;
+			
+			}
+			.header>a:hover{
+				border:1px solid black;
+			}
+			.banner{
+				height:600px;
+				background: url(banner1.jpg);
+				background-size:100% 100%;
+			}
+			.left,.right{
+				height: 600px;
+				width: 200px;
+				/* background-color:rgba(0,0,0,0.3) ; */
+			}
+			.left{
+				float:left ;
+			}
+			.right{
+				float: right;
+			}
+			.clear{
+				clear: both;
+			}
+			.left:hover::before{
+				content: url(arrow-top.png);
+				float: left;
+				transform: rotate(-90deg);
+				margin-top:260px;
+				margin-left:65px ;
+				
+			}
+			.right:hover::before{
+				content: url(arrow-top.png);
+				float: right;
+				transform: rotate(90deg);
+				margin-top:260px;
+				margin-right:65px ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="logo.svg" class="logo"/>
+			<ul class="nav">
+				<li>
+					<a href="#">手机</a>
+				</li>
+				<li>
+					<a href="#">笔记本</a>
+				</li>
+				<li>
+					<a href="#">平板</a>
+				</li>
+			</ul>
+			<a href="#">华为商城</a>
+		</div>
+		<div class="banner">
+			<a href="#" class="left"></a>
+			<a href="#" class="right"></a>
+		</div>
+	</body>
+</html>
